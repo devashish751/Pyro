@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:padding="3dp" android:layout_width="match_parent" 
+     android:layout_height="match_parent"
+     android:background="#000000">
+    
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the 3 digit CVV number :"
+            android:layout_alignParentTop="true"
+            android:id="@+id/textView3"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+     
+   
+   
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:textColor="#FFFFFF"
+            android:id="@+id/confirmPayment"
+            android:layout_alignParentBottom="true" 
+            android:layout_alignParentRight="true" 
+            android:onClick="confirm_payment"/>
+
+       <EditText
+           android:id="@+id/cvvtext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textView3"
+           android:textColor="#FFFFFF"
+           android:layout_below="@+id/textView3"
+           android:layout_marginTop="42dp"
+           android:ems="10"
+           android:inputType="numberPassword" >
+
+           <requestFocus />
+       </EditText>
+    
+</RelativeLayout>
